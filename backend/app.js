@@ -8,5 +8,10 @@ app.use(express.json())
 app.use(cors())    
 connectdb()
 
+
+app.get("/data",(req,res)=>{
+res.send("backend working")
+})
+
 app.use("/api/",user)
 export default app
